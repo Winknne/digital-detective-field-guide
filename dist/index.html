@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arix Signature Christmas Tree</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Detective - Truth Filter</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #050a08; /* Deep dark green/black */
-        overflow: hidden;
-        font-family: 'Playfair Display', serif;
-      }
-      .font-cinzel {
-        font-family: 'Cinzel', serif;
-      }
-      /* Custom Gold Gradient Text */
-      .text-gold-gradient {
-        background: linear-gradient(to bottom, #cfc09f 0%, #ffecb3 40%, #c49c48 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0px 0px 10px rgba(196, 156, 72, 0.3);
-      }
-      .border-gold {
-        border-image: linear-gradient(to right, #cfc09f, #ffecb3, #c49c48) 1;
-      }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; margin: 0; padding: 0; }
+        #root { min-height: 100vh; }
+        /* 启动时的加载提示 */
+        #root:empty::after {
+            content: "INITIALIZING TERMINAL...";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #6366f1;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 0.3em;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
     </style>
 
 <link rel="stylesheet" href="/index.css">
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "react": "https://esm.sh/react@^19.2.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
-    "three": "https://esm.sh/three@^0.182.0",
-    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
-    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2"
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-ETyhBLWe.js"></script>
+  <script type="module" crossorigin src="/digital-detective-filed-guide-sample/assets/index-VK_KM3yO.js"></script>
 </head>
-  <body>
+<body>
     <div id="root"></div>
 </body>
 </html>
